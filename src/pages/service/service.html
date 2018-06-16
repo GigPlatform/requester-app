@@ -17,17 +17,27 @@
  <div class="persona-profile" text-center #profilePic [style.background-image]="'url(' + persona.profilePic + ')'">
   </div>
 
-  <div class="persona-detail" padding-vertical>
-    <h2>{{persona.name}}</h2>
-    <h3>{{persona.about}}</h3>
-    <p>{{persona.info}}</p>
-  </div>
- 
-  <div class="persona-description" padding-vertical>
-    <h2>{{persona.name}}</h2>
-    <h3>{{persona.description}}</h3>
-    <p>{{persona.skills}}</p>
-  </div>
+  <ion-grid>
+  <ion-row>
+    <ion-col>
+      <div class="persona-detail" padding-vertical>
+        <h2>{{persona.name}}</h2>
+        <h3>{{persona.about}}</h3>
+        <p>{{persona.description}}</p>
+      </div>
+    </ion-col>
+
+    <ion-col>
+      <ion-item *ngFor="let employed of employedJSON">
+      <div class="persona-description" padding-vertical>
+        <h2>{{employed.name}}</h2>
+        <h3>{{persona.skills}}</h3>
+        <p>{{persona.info}}</p>
+      </div>
+    </ion-item>
+    </ion-col>
+  </ion-row>
+</ion-grid>
  
   <div class="center">
   <button ion-button block start (click)="openHistory()">Cancel</button>
@@ -35,7 +45,7 @@
 </div>
 
 <div padding-vertical>
-    <ion-list-header>More like this job</ion-list-header>
+    <ion-list-header>More like this market</ion-list-header>
      <ion-item *ngFor="let persona of suggestionsJSON">
        <button ion-item (click)="openPersona(persona)">
         <ion-thumbnail item-start>

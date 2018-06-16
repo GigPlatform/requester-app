@@ -7,13 +7,12 @@ import { Persona } from '../../models/persona';
 
 @IonicPage()
 @Component({
-  selector: 'page-billing',
-  templateUrl: 'billing.html',
+  selector: 'page-worker-sel',
+  templateUrl: 'worker-sel.html',
 })
-export class BillingPage {
-  persona: any;
-  employedJSON: any[];
-
+export class WorkerSelPage {
+	persona: any;
+  workersJSON: any[];
 
   constructor(public navCtrl: NavController, navParams: NavParams, public personas: Personas, private dataFinder : DataFinder, public modalCtrl: ModalController) {
     this.persona = navParams.get('persona') || personas.defaultPersona;
@@ -25,11 +24,16 @@ export class BillingPage {
   }
 
   SetQueryOptionsData(data : any){
-    this.employedJSON = data.employedJSON;
+    this.workersJSON = data.workersJSON;
   }
 
-  OpenHistory(){
+  openHistory(){
       this.navCtrl.push('ContentPage');
-    }
+  }
 
+  openService(persona: Persona) {
+    this.navCtrl.push('ServicePage', {
+      persona: persona
+    });
+  }
 }

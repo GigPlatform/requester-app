@@ -37,8 +37,8 @@ export class WorkPage {
     this.navCtrl.push('ContentPage');
     }
 
-  openService(persona: Persona) {
-    this.navCtrl.push('ServicePage', {
+  openWorkerSelPage(persona){
+    this.navCtrl.push('WorkerSelPage', {
       persona: persona
     });
   }

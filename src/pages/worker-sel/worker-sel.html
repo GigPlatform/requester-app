@@ -1,0 +1,35 @@
+<ion-header> 
+
+<ion-navbar text-center color="dark">
+<ion-navbar hideBackButton *navbar></ion-navbar>
+  <ion-buttons start>
+    <button ion-button icon-only menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+  </ion-buttons>
+
+  <ion-title> Select your worker </ion-title>
+</ion-navbar>
+
+</ion-header>
+
+<ion-content padding>
+
+  <ion-searchbar (ionInput)="getItems($event)"></ion-searchbar>
+
+  <ion-item *ngFor="let worker of workersJSON">
+       <button ion-item (click)="selectworker()">
+        <ion-thumbnail item-start>
+          <img [src]="worker.profilePic" />
+        </ion-thumbnail>
+        <h2>{{worker.name}}</h2>
+        <h3>{{worker.about}}</h3>
+      </button>
+    </ion-item>
+
+ <div class="center">
+  <button ion-button block start (click)="openService(persona)">Continue</button>
+  <button ion-button block end (click)="openHistory()">Cancel</button>
+</div>
+
+</ion-content>

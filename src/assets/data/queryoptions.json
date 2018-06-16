@@ -3,173 +3,200 @@
         "name": "Market 1",
         "profilePic": "assets/img/market_logo.png",
         "about": "Subtitle",
-        "info": "Money offered",
+        "info": "Average wage",
         "description": "Description",
         "skills": "Skills required",
-        "money": "Money earned"
+        "money": "Wage earned by worker"
       },
       {
         "name": "Market 2",
         "profilePic": "assets/img/market_logo_2.png",
         "about": "Subtitle",
-        "info": "Money offered",
+        "info": "Average wage",
         "description": "Description",
         "skills": "Skills required",
-        "money": "Money earned"
+        "money": "Wage earned by worker"
       },
       {
         "name": "Market 3",
         "profilePic": "assets/img/market_logo_3.png",
         "about": "Subtitle",
-        "info": "Money offered",
+        "info": "Average wage",
         "description": "Description",
         "skills": "Skills required",
-        "Money": "Money earned"
+        "Money": "Wage earned by worker"
       }],
 
-      "workerJSON": [{
-      		"name": "Worker name",
+      "requesterJSON": [{
+      		"name": "Requester name",
       		"profilePic": "assets/img/user.png",
-      		"about": "Rating"
+      		"about": "Rating", 
+          "info": "Info of requester"
       	}],
+
+      "employedJSON": [{
+          "name": "Worker name",
+          "profilePic": "assets/img/user.png",
+          "about": "Rating",
+          "description": "Description"
+        }],
+
+      "workersJSON": [{
+        "name": "Worker 1",
+        "profilePic": "assets/img/user.png",
+        "about": "About",
+        "rating": "Rating"
+      },
+      {
+        "name": "Worker 2",
+        "profilePic": "assets/img/user.png",
+        "about": "About",
+        "rating": "Rating"
+      },
+      {
+        "name": "Worker 3",
+        "profilePic": "assets/img/user.png",
+        "about": "About",
+        "rating": "Rating"
+      }],
 
       "activeJSON": [{
         "name": "Market 1",
         "profilePic": "assets/img/switch_logo1.png",
         "about": "Subtitle",
-        "info": "Money offered",
+        "info": "Average wage",
         "description": "Description",
         "skills": "Skills required",
-        "money": "Money earned"
+        "money": "Wage earned by worker"
       },
       {
         "name": "Market 2",
         "profilePic": "assets/img/switch_logo2.png",
         "about": "Subtitle",
-        "info": "Money offered",
+        "info": "Average wage",
         "description": "Description",
         "skills": "Skills required",
-        "money": "Money earned"
+        "money": "Wage earned by worker"
       },
       {
         "name": "Market 3",
         "profilePic": "assets/img/switch_logo3.png",
         "about": "Subtitle",
-        "info": "Money offered",
+        "info": "Average wage",
         "description": "Description",
         "skills": "Skills required",
-        "Money": "Money earned"
+        "Money": "Wage earned by worker"
       }],
 
       "pendingJSON": [{
         "name": "Market 1",
         "profilePic": "assets/img/market_logo.png",
         "about": "Subtitle",
-        "info": "Money offered",
+        "info": "Average wage",
         "description": "Description",
         "skills": "Skills required",
-        "money": "Money earned"
+        "money": "Wage earned by worker"
       },
       {
         "name": "Market 2",
         "profilePic": "assets/img/market_logo_2.png",
         "about": "Subtitle",
-        "info": "Money offered",
+        "info": "Average wage",
         "description": "Description",
         "skills": "Skills required",
-        "money": "Money earned"
+        "money": "Wage earned by worker"
       },
       {
         "name": "Market 3",
         "profilePic": "assets/img/market_logo_3.png",
         "about": "Subtitle",
-        "info": "Money offered",
+        "info": "Average wage",
         "description": "Description",
         "skills": "Skills required",
-        "Money": "Money earned"
+        "Money": "Wage earned by worker"
       }],
 
     "completedJSON": [{
         "name": "Market 1",
         "profilePic": "assets/img/switch_logo4.png",
         "about": "Subtitle",
-        "info": "Money offered",
+        "info": "Average wage",
         "description": "Description",
         "skills": "Skills required",
-        "money": "Money earned"
+        "money": "Wage earned by worker"
       },
       {
         "name": "Market 2",
         "profilePic": "assets/img/switch_logo11.png",
         "about": "Subtitle",
-        "info": "Money offered",
+        "info": "Average wage",
         "description": "Description",
         "skills": "Skills required",
-        "money": "Money earned"
+        "money": "Wage earned by worker"
       },
       {
         "name": "Market 3",
         "profilePic": "assets/img/switch_logo5.png",
         "about": "Subtitle",
-        "info": "Money offered",
+        "info": "Average wage",
         "description": "Description",
         "skills": "Skills required",
-        "Money": "Money earned"
+        "Money": "Wage earned by worker"
       }],
 
     "canceledJSON": [{
         "name": "Market 1",
         "profilePic": "assets/img/switch_logo6.png",
         "about": "Subtitle",
-        "info": "Money offered",
+        "info": "Average wage",
         "description": "Description",
         "skills": "Skills required",
-        "money": "Money earned"
+        "money": "Wage earned by worker"
       },
       {
         "name": "Market 2",
         "profilePic": "assets/img/switch_logo7.png",
         "about": "Subtitle",
-        "info": "Money offered",
+        "info": "Average wage",
         "description": "Description",
         "skills": "Skills required",
-        "money": "Money earned"
+        "money": "Wage earned by worker"
       },
       {
         "name": "Market 3",
         "profilePic": "assets/img/switch_logo8.png",
         "about": "Subtitle",
-        "info": "Money offered",
+        "info": "Average wage",
         "description": "Description",
         "skills": "Skills required",
-        "Money": "Money earned"
+        "Money": "Wage earned by worker"
       }],
 
     "suggestionsJSON": [{
         "name": "Market 1",
         "profilePic": "assets/img/switch_logo9.png",
         "about": "Subtitle",
-        "info": "Money offered",
+        "info": "Average wage",
         "description": "Description",
         "skills": "Skills required",
-        "money": "Money earned"
+        "money": "Wage earned by worker"
       },
       {
         "name": "Market 2",
         "profilePic": "assets/img/switch_logo10.png",
         "about": "Subtitle",
-        "info": "Money offered",
+        "info": "Average wage",
         "description": "Description",
         "skills": "Skills required",
-        "money": "Money earned"
+        "money": "Wage earned by worker"
       },
       {
         "name": "Market 3",
         "profilePic": "assets/img/switch_logo11.png",
         "about": "Subtitle",
-        "info": "Money offered",
+        "info": "Average wage",
         "description": "Description",
         "skills": "Skills required",
-        "Money": "Money earned"
+        "Money": "Wage earned by worker"
       }]
 }

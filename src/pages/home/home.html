@@ -17,17 +17,17 @@
 
   <ion-list>
 
-    <ion-item *ngFor="let worker of workerJSON">
+    <ion-item *ngFor="let requester of requesterJSON">
        <button ion-item (click)="openProfile()">
         <ion-thumbnail item-start>
-          <img [src]="worker.profilePic" />
+          <img [src]="requester.profilePic" />
         </ion-thumbnail>
-        <h2>{{worker.name}}</h2>
-        <h3>{{worker.about}}</h3>
+        <h2>{{requester.name}}</h2>
+        <h3>{{requester.about}}</h3>
       </button>
     </ion-item>
 
-      <ion-list-header>Last works</ion-list-header>
+      <ion-list-header>Last markets</ion-list-header>
       <ion-item *ngFor="let persona of completedJSON">
        <button ion-item (click)="openPersona(persona)">
         <ion-thumbnail item-start>

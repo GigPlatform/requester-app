@@ -7,14 +7,11 @@ import { DataFinder } from '../../providers/datafinder';
 
 @IonicPage()
 @Component({
-  selector: 'page-home',
-  templateUrl: 'home.html'
+  selector: 'page-perfil',
+  templateUrl: 'perfil.html'
 })
-export class HomePage {
-  personasJSON: any[];
-  requesterJSON: any[];
-  completedJSON: any[];
-  suggestionsJSON: any[];
+export class PerfilPage {
+	requesterJSON: any[];
 
   constructor(public navCtrl: NavController, public personas: Personas, private dataFinder : DataFinder, public modalCtrl: ModalController) {
   }
@@ -25,23 +22,6 @@ export class HomePage {
   }
 
   SetQueryOptionsData(data : any){
-    this.personasJSON = data.personasJSON;
     this.requesterJSON = data.requesterJSON;
-    this.completedJSON = data.completedJSON;
-    this.suggestionsJSON = data.suggestionsJSON;
-  }
-
-  openPersona(persona: Persona) {
-    this.navCtrl.push('WorkPage', {
-      persona: persona
-    });
-  }
-
-  openHistory(){
-    this.navCtrl.push('ContentPage');
-  }
-
-  openProfile(){
-    this.navCtrl.push('PerfilPage');
-  }
+    }
 }

@@ -1,0 +1,42 @@
+<ion-header> 
+
+<ion-navbar text-center color="dark">
+
+  <ion-buttons start>
+    <button ion-button icon-only menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+  </ion-buttons>
+
+  <ion-title center> "Requester name" </ion-title>
+</ion-navbar>
+
+</ion-header>
+
+<ion-content>
+
+<ion-grid>
+  <ion-row>
+  	<ion-col>
+      <ion-item *ngFor="let requester of requesterJSON">
+        <div class="requester.image" padding-vertical>
+        	<img [src]="requester.profilePic" />
+        </div>
+       </ion-item>
+     </ion-col>
+
+    <ion-col>
+      <ion-item *ngFor="let requester of requesterJSON">
+       <h2>{{requester.name}}</h2>
+       <h3>{{requester.about}}</h3>
+       <p>{{requester.info}}</p>
+      </ion-item>
+       <ion-item>
+        <ion-label>Active</ion-label>
+          <ion-toggle [(ngModel)]="Active"></ion-toggle>
+       </ion-item>
+    </ion-col>
+  </ion-row>
+</ion-grid>
+
+</ion-content>
