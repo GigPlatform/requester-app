@@ -1,1 +1,1 @@
-Worker app for Meta-GIG built with Ionic Cordova
+Requester app for Meta-GIG built with Ionic Cordova
