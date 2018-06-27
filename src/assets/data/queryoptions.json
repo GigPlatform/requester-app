@@ -28,10 +28,17 @@
       }],
 
       "requesterJSON": [{
-      		"name": "Requester name",
+      		"first_name": "Mike",
+          "last_name": "Anderson",
       		"profilePic": "assets/img/user.png",
       		"about": "Rating", 
-          "info": "Info of requester"
+          "info": "Info of requester",
+          "phone": "5555 5555",
+          "country": "USA",
+          "city": "Portland",
+          "state": "Oregon",
+          "postcode": "01003",
+          "description": "dsjngjksnvjfnajñlmnvreñnmvjkfreñmnropnmvjkrñnvkrleñnvjkrenvjrelnvjlnfrjqmcriomcirngjroeqnvirngirew"
       	}],
 
       "employedJSON": [{
@@ -39,6 +46,24 @@
           "profilePic": "assets/img/user.png",
           "about": "Rating",
           "description": "Description"
+        }],
+
+      "pmethods": [{
+        "name": "PayPal"
+      },
+      {
+        "name": "Debit card"
+      },
+      {
+        "name": "Credit card"
+      },
+      {
+        "name": "Cash"
+      }
+      ],
+
+      "paypalemail":[{
+        "email": "example@email.com"
         }],
 
       "workersJSON": [{

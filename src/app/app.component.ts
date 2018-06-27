@@ -35,7 +35,8 @@ export class MyApp {
     { title: 'Homepage', component: 'HomePage' },
     { title: 'Search', component: 'SearchPage'},
     { title: 'History', component: 'ContentPage' },
-    { title: 'Profile', component: 'PerfilPage' }
+    { title: 'Profile', component: 'PerfilPage' },
+    { title: 'Settings', component: 'SettingsPage'}
   ]
 
   constructor(private translate: TranslateService, platform: Platform, settings: Settings, private config: Config, private statusBar: StatusBar, private splashScreen: SplashScreen) {

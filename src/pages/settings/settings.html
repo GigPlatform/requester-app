@@ -1,0 +1,108 @@
+<ion-header> 
+
+<ion-navbar text-center color="dark">
+<ion-navbar hideBackButton *navbar></ion-navbar>
+
+  <ion-buttons start>
+    <button ion-button icon-only menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+  </ion-buttons>
+
+  <ion-title center>Settings</ion-title>
+</ion-navbar>
+
+</ion-header>
+
+<ion-content padding>
+	<div padding>
+	    <ion-segment [(ngModel)]="config">
+	      <ion-segment-button value="Profile">
+	        Profile
+	      </ion-segment-button>
+	      <ion-segment-button value="Payment">
+	        Payment
+	      </ion-segment-button>
+	    </ion-segment>
+	</div>
+
+	<div [ngSwitch]="config">
+	    <ion-list *ngSwitchCase="'Profile'">
+	    	<ion-grid>
+	    		<ion-row>
+			  		<ion-col>
+			      		<ion-item *ngFor="let requester of requesterJSON">
+			        		<div class="requester-image" padding-vertical>
+			        			<img [src]="requester.profilePic" />
+			        		</div>
+			       		</ion-item>
+			     	</ion-col>
+			     	<ion-col>
+				    	<ion-list>
+				    		<div *ngFor ="let requester of requesterJSON">
+    							<ion-item>
+						    		<ion-label color="primary">First Name</ion-label>
+						    		<ion-input placeholder type="text" [(ngModel)]="requester.first_name"></ion-input>
+								</ion-item>
+								<ion-item>
+							    	<ion-label color="primary">Last Name</ion-label>
+							    	<ion-input placeholder type="text" [(ngModel)]="requester.last_name"></ion-input>
+								</ion-item>
+								<ion-item>
+							    	<ion-label color="primary">Phone</ion-label>
+							    	<ion-input placeholder type="text" [(ngModel)]="requester.phone"></ion-input>
+								</ion-item>
+								<ion-item>
+							    	<ion-label color="primary">Country</ion-label>
+							    	<ion-input placeholder type="text" [(ngModel)]="requester.country"></ion-input>
+								</ion-item>
+								<ion-item>
+							    	<ion-label color="primary">City</ion-label>
+							    	<ion-input placeholder type="text" [(ngModel)]="requester.city"></ion-input>
+								</ion-item>
+								<ion-item>
+							    	<ion-label color="primary">State</ion-label>
+							    	<ion-input placeholder type="text" [(ngModel)]="requester.state"></ion-input>
+								</ion-item>
+								<ion-item>
+							    	<ion-label color="primary">Postcode</ion-label>
+							    	<ion-input placeholder type="text" [(ngModel)]="requester.postcode"></ion-input>
+								</ion-item>
+							</div>
+						</ion-list>
+					</ion-col>
+				</ion-row>
+			</ion-grid>
+			<ion-list>
+  				<ion-item *ngFor ="let requester of requesterJSON">
+				    <ion-label floating>Description</ion-label>
+				    <ion-input placeholder type="text" [(ngModel)]="requester.description"></ion-input>
+				</ion-item>
+			</ion-list>
+		</ion-list>
+
+		<ion-list *ngSwitchCase="'Payment'">
+			<ion-grid>
+	    		<ion-row>
+	    			<ion-col>
+			     	</ion-col>
+			  		<ion-col>
+						<ion-item>
+    						<ion-label>Payment methods</ion-label>
+							<ion-select [(ngModel)]="paymentmethods" multiple>
+							<ion-option *ngFor="let pmethod of pmethods" [value] = "pmethod.name">{{pmethod.name}}</ion-option>
+    						</ion-select>
+						</ion-item>
+						<div *ngFor ="let dat of paypalemail">
+							<ion-item>
+							    <ion-label color="primary">Paypal email</ion-label>
+							    <ion-input placeholder type="text" [(ngModel)]="dat.email"></ion-input>
+							</ion-item>
+						</div>
+					</ion-col>
+				</ion-row>
+			</ion-grid>	
+		</ion-list>
+	</div>
+
+</ion-content>

@@ -20,7 +20,7 @@
   <ion-row>
   	<ion-col>
       <ion-item *ngFor="let requester of requesterJSON">
-        <div class="requester.image" padding-vertical>
+        <div class="requester-image" padding-vertical>
         	<img [src]="requester.profilePic" />
         </div>
        </ion-item>
@@ -28,7 +28,7 @@
 
     <ion-col>
       <ion-item *ngFor="let requester of requesterJSON">
-       <h2>{{requester.name}}</h2>
+       <h2>{{requester.first_name}}</h2>
        <h3>{{requester.about}}</h3>
        <p>{{requester.info}}</p>
       </ion-item>
