@@ -14,6 +14,7 @@ export class SettingsPage {
 	requesterJSON: any[];
 	pmethods: any[];
 	paypalemail: any[];
+  config: string = "Profile";
 
   constructor(public navCtrl: NavController, private dataFinder : DataFinder, public personas: Personas, public modalCtrl: ModalController) {
   }
@@ -28,5 +29,17 @@ export class SettingsPage {
   	this.pmethods = data.pmethods;
   	this.paypalemail = data.paypalemail;
 
+  }
+
+  OpenHistory(){
+    this.navCtrl.push('HomePage');
+  }
+
+  OpenCancel(){
+    this.navCtrl.push('HomePage');
+  }
+
+  OpenAnnouncements(){
+    this.navCtrl.push('AnnouncementsPage');
   }
 }
