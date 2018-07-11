@@ -95,26 +95,20 @@
 		</ion-list>
 
 		<ion-list *ngSwitchCase="'Payment'">
-			<ion-grid>
-	    		<ion-row>
-	    			<ion-col>
-			     	</ion-col>
-			  		<ion-col>
-						<ion-item>
-    						<ion-label>Payment methods</ion-label>
-							<ion-select [(ngModel)]="paymentmethods" multiple>
-							<ion-option *ngFor="let pmethod of pmethods" [value] = "pmethod.name">{{pmethod.name}}</ion-option>
-    						</ion-select>
-						</ion-item>
-						<div *ngFor ="let dat of paypalemail">
-							<ion-item>
-							    <ion-label color="primary">Paypal email</ion-label>
-							    <ion-input placeholder type="text" [(ngModel)]="dat.email"></ion-input>
-							</ion-item>
-						</div>
-					</ion-col>
-				</ion-row>
-			</ion-grid>	
+			<ion-list>
+				<ion-item>
+    				<ion-label>Payment methods</ion-label>
+					<ion-select [(ngModel)]="paymentmethods" multiple>
+						<ion-option *ngFor="let pmethod of pmethods" [value] = "pmethod.name">{{pmethod.name}}</ion-option>
+    				</ion-select>
+				</ion-item>
+				<div *ngFor ="let dat of paypalemail">
+					<ion-item>
+						<ion-label color="primary">Paypal email</ion-label>
+						<ion-input placeholder type="text" [(ngModel)]="dat.email"></ion-input>
+					</ion-item>
+				</div>
+			</ion-list>
 			<button ion-button block (click)="OpenHistory()">Save changes</button>
 			<button ion-button block (click)="OpenCancel()" color="light">Cancel</button>
 		</ion-list>
